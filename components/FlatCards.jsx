@@ -29,8 +29,8 @@ function FlatCards({
   const [gyroscopeData, setGyroscopeData] = useState({ x: 0, y: 0, z: 0 });
   const [noiseLevel, setNoiseLevel] = useState(0);
 
-  const OPENAI_API_KEY = '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';
-  const OPEN_WEATHER_MAP = 'bd8fddf7f7b23aa9faec95c716e4c7ad';
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+  const OPEN_WEATHER_MAP = process.env.OPEN_WEATHER_MAP;
 
   let lightSubscription = null;
 
